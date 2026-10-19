@@ -4,10 +4,10 @@ import type { Votes } from '../../types/votes';
 interface VoteStatsProps {
   votes: Votes;
   totalVotes: number;
-  votesRate: number;
+  positiveRate: number;
 }
 
-function VoteStats({ votes, totalVotes, votesRate }: VoteStatsProps) {
+function VoteStats({ votes, totalVotes, positiveRate }: VoteStatsProps) {
   return (
     <div className={css.container}>
       <p className={css.stat}>
@@ -23,7 +23,7 @@ function VoteStats({ votes, totalVotes, votesRate }: VoteStatsProps) {
         Total: <strong>{totalVotes}</strong>
       </p>
       <p className={css.stat}>
-        Positive: <strong>{votesRate}%</strong>
+        Positive: <strong>{positiveRate}%</strong>
       </p>
     </div>
   );

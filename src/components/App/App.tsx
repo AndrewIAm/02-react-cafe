@@ -2,7 +2,7 @@ import css from './App.module.css';
 import { useState } from 'react';
 import type { Votes, VoteType } from '../../types/votes';
 
-import CafeHeader from '../CafeInfo/CafeInfo';
+import CafeInfo from '../CafeInfo/CafeInfo';
 import VoteOptions from '../VoteOptions/VoteOptions';
 import VoteStats from '../VoteStats/VoteStats';
 import Notification from '../Notification/Notification';
@@ -33,7 +33,7 @@ function App() {
   return (
     <>
       <div className={css.app}>
-        <CafeHeader />
+        <CafeInfo />
         <VoteOptions
           onVote={handleVote}
           onReset={resetVotes}
@@ -46,7 +46,7 @@ function App() {
           <VoteStats
             votes={votes}
             totalVotes={totalVotes}
-            votesRate={positiveRate}
+            positiveRate={positiveRate}
           />
         )}
       </div>

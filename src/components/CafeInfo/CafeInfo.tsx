@@ -1,6 +1,6 @@
 import css from './CafeInfo.module.css';
 
-function CafeHeader() {
+function CafeInfo() {
   return (
     <div className={css.container}>
       <h1 className={css.title}>Sip Happens Café</h1>
@@ -11,4 +11,4 @@ function CafeHeader() {
   );
 }
 
-export default CafeHeader;
+export default CafeInfo;
