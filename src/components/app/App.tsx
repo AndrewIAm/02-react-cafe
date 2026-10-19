@@ -2,10 +2,10 @@ import css from './App.module.css';
 import { useState } from 'react';
 import type { Votes, VoteType } from '../../types/votes';
 
-import CafeHeader from '../cafeInfo/CafeInfo';
-import VoteOptions from '../voteOptions/voteOptions';
-import VoteStats from '../voteStats/VoteStats';
-import Notification from '../notification/Notification';
+import CafeHeader from '../CafeInfo/CafeInfo';
+import VoteOptions from '../VoteOptions/voteOptions';
+import VoteStats from '../VoteStats/VoteStats';
+import Notification from '../Notification/Notification';
 
 function App() {
   const [votes, setVotes] = useState<Votes>({
